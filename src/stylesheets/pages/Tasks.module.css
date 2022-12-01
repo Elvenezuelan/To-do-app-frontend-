@@ -1,0 +1,50 @@
+.h2{
+    font-size: 5.5rem;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.TagContainer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat( 3, minmax(5rem, 1fr));
+    grid-template-rows: 15rem;
+    grid-auto-rows: 15rem;
+    gap: 1rem;
+    padding: 2rem 10rem;
+
+}
+
+.tag{
+    background-color: red;
+    padding: 1.4rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+}
+
+.h3{
+    font-size: 3.5rem
+
+}
+
+.iconContainer{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.tasksNumber{
+    display: inline;
+    font-size: 4.5rem;
+}
+
+.icon{
+    display: inline;
+    font-size: 5rem;
+}

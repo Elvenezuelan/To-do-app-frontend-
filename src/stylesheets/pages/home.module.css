@@ -1,29 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;600;700;800&display=swap');
 
-*{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0%;
+
+
+
+html{
+    font-size: 40.5%;
+}
+
+body{
+    min-height: 100vh
 }
 
 .header{
-    font-size: 62.5%;
-    display: block;
+    display: flex;
     position: relative;
-    top: 3em;
-    margin: auto;
-    margin: 3em;
+    justify-content: center;
+    width: 75%;
+    align-items: center;
+    bottom: 3em
 
 }
 
 
-/* main{
-    display:flex
-} */
+.main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh
+}
+
+
 .TitleContainer{
-    display:block;
-    margin: auto;
-    width: 50em
+    display: inline;
+    width: 60%;
 }
 
 .header h1, .header h2{
@@ -32,31 +42,115 @@
     font-style: normal;
     text-align: center;
     position: relative;
-    z-index: 50
+    z-index: 50;
+    color: var(--dart-text-color);
 }
 
 .header h2{
     font-weight: 700;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .header h1{
     font-weight: 800;
-    font-size: 8em;
+    font-size: 8rem;
 }
 
 .icon1{
-    position: absolute;
-    width: 30em;
-    left: 1em;
+    position: relative;
+    width: 15em;
+    /* left: 1em; */
     z-index: 25;
-    top: 2em;
+    /* top: 2em; */
 }
 
 .icon2{
-    position: absolute;
-    width: 30em;
-    right: 1em;
-    top:2em;
+    position: relative;
+    width: 15em;
+    /* right: 1em;
+    top:2em; */
     z-index: 25;
 }
+
+.upperContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    bottom: 3rem;
+    width: 90%;
+    height: 50%;
+}
+.h4{
+    font-size: 3.5rem;
+    translate: 0 -.5em;
+    font-family: 'Baloo Chettan 2', cursive;
+}
+
+.plus{
+    width: 40%;
+    translate: 0 1.5rem;
+}
+
+.link{
+    margin: 0;
+    padding: 0;
+    text-decoration: 0;
+    color: var(--black);
+    display: flex;
+    background-color: var(--transparent-background);
+    border-radius: 5rem;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 7em 0;
+    width: 25%;
+    -webkit-border-radius: 5rem;
+    -moz-border-radius: 5rem;
+    -ms-border-radius: 5rem;
+    -o-border-radius: 5rem;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    height: 120%
+      
+}
+
+.link:hover{
+    transition-property: background-color;
+    transition-duration: 500ms;
+    background-color: rgba(32, 32, 48, 0.7);
+}
+
+.link > .plus{
+    transition: transform;
+    -webkit-transition: transform;
+    -moz-transition: transform;
+    -ms-transition: transform;
+    -o-transition: transform;
+    transition-duration: .5s;
+}
+
+.link:hover > .plus{
+    transition-property: all;
+    transition-duration: .5s;
+    transform: rotate(360deg) scale(1.185);
+    -webkit-transform: rotate(360deg) scale(1.185);
+    -moz-transform: rotate(360deg) scale(1.185);
+    -ms-transform: rotate(360deg) scale(1.185);
+    -o-transform: rotate(360deg) scale(1.185);
+    transition-timing-function: ease;
+}
+
+@media screen and (max-width: 600px) {
+    .upperContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .link{
+        width: 100%;
+    }
+}
+    
+

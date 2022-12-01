@@ -1,0 +1,192 @@
+.main{
+    width: 90%;
+    display: block;
+
+
+    
+}
+
+body{
+    min-height: 100vh
+}
+
+.img{
+    height: 50rem;
+    position: fixed;
+    left: 15%;
+    top: 5rem;
+
+}
+
+.h1{
+    font-size: 5rem;
+    font-family: 'Baloo Chettan 2', cursive;
+
+}
+
+.formContainer{
+    position: absolute;
+    right: 10%;
+    text-align: center;
+    height: 100%;
+}
+
+.form{
+    width: 35rem;
+    max-width: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.input{
+    height: 5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border: none;
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+.textarea{
+    height: 20rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    margin-bottom: 1rem;
+    min-width: 100%;
+    width: 100%;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    outline: none
+}
+
+.tagInputContainer{
+    width: 100%;
+    max-width: 100%;
+    padding: 3px 2rem;
+    min-height: 6rem;
+    background-color: #fff;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    flex-wrap: wrap;
+    gap: 1rem .25rem;
+}
+
+.tagInput{
+    outline: none;
+    min-width: 4rem;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    display: flex;
+}
+
+.tag{
+    background-color: aqua;
+    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+    display: flex;
+    align-items: center;
+    column-gap: .8rem;
+    height: 3rem
+}
+
+.tag p{
+    font-size: 1.5rem;
+    vertical-align: middle;
+    margin: 0
+}
+
+.iconX{
+    font-size: 1.7rem;
+
+}
+
+.iconX:hover{
+    filter:opacity(.5);
+    cursor: pointer;
+    -webkit-filter:opacity(.5);
+}
+
+.button{
+    width: 40%;
+    background-color: rgba(32, 32, 48, 0.3);;
+    padding: .5rem 0;
+    border: none;
+    justify-self: flex-end;
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.button:hover{
+    background-color: rgba(32, 32, 48, 0.6);;
+}
+
+.inputContainer{
+    position: relative;
+}
+
+.list{
+    position: absolute;
+    top: 3rem;
+    background-color: rgba(32, 32, 48, 0.6);
+    clip-path: polygon(20% 0, 26% 9%, 100% 9%, 100% 100%, 0 100%, 0 9%, 13% 9%);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 4em;
+    /* gap: .5rem; */
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+    display:none;
+}
+
+.listItem{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    background-color: aqua;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    padding: .5rem 1em;
+    z-index: -1
+   
+
+}
+
+.listItem:hover{
+    filter: opacity(.5);
+    -webkit-filter: opacity(.5);
+}
+
+/* .tagInput:focus ~ .list{
+    display: flex;
+} */
+
+.visible{
+    display: flex;
+}
